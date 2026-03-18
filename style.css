@@ -1,0 +1,239 @@
+body{
+margin:0;
+font-family:Poppins;
+scroll-behavior:smooth;
+}
+
+header{
+background:#111;
+color:white;
+padding:15px;
+position:sticky;
+top:0;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+#home{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(120deg,#cb1140,#25dcfc);
+color:white;
+text-align:center;
+}
+
+.animate-text span{
+color:yellow;
+}
+
+.btn{
+background:white;
+color:black;
+padding:10px 20px;
+text-decoration:none;
+margin-top:10px;
+display:inline-block;
+}
+
+section{
+padding:60px;
+text-align:center;
+}
+
+.skill{
+width:60%;
+margin:auto;
+margin-bottom:20px;
+}
+
+.bar{
+background:#ddd;
+height:10px;
+border-radius:10px;
+}
+
+.progress{
+height:10px;
+border-radius:10px;
+}
+
+.html{
+width:90%;
+background:#eb3c36;
+animation:load1 2s;
+}
+
+.css{
+width:80%;
+background:#0d9bdd;
+animation:load1 2s;
+}
+
+.js{
+width:70%;
+background:#29e011;
+animation:load1 2s;
+}
+
+@keyframes load1{
+from{width:0}
+}
+
+.project-container{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:20px;
+width:200px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.1);
+background:#f16ea0;
+color:white;
+}
+
+input,textarea{
+width:80%;
+padding:10px;
+margin:10px;
+}
+
+button{
+padding:10px 20px;
+background:#2575fc;
+color:white;
+border:none;
+}
+
+footer{
+background:#111;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+.dark{
+background:#111;
+color:white;
+}
+
+@media(max-width:768px){
+
+nav ul{
+flex-direction:column;
+}
+
+.skill{
+width:90%;
+}
+
+}
+
+body{
+margin:0;
+font-family:Poppins;
+background:linear-gradient(-45deg,#b47eee,#88ec7f,#70daec,#ee539e);
+background-size:400% 400%;
+animation:gradient 10s ease infinite;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.cursor{
+position:fixed;
+width:20px;
+height:20px;
+border-radius:50%;
+background:#ffcc00;
+pointer-events:none;
+transform:translate(-50%,-50%);
+}
+
+.card img{
+width:100%;
+transition:0.5s;
+}
+
+.card:hover img{
+transform:scale(1.2);
+}
+
+
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  background-color: #f16caf;
+}
+
+#contact h2 {
+  font-size: 2em;
+  color: #0a0a0a;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+#contact-form button {
+  background-color: #0e0f0e;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+#contact-form button:hover {
+  background-color: #090a09;
+}
+
